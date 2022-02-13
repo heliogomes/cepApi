@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 20px;
+  color: #0f0f0f;
+}
+
+#master {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#master input {
+  width: 10rem;
+  height: 30px;
+  background-color: #d1d1d1;
+  border: none;
+  color: black;
+}
+
+#master #section1 {
+  width: 30vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(50deg, #4a33a0 0, #2b2586 25%, #00176a 50%, #00084f 75%, #000037 100%);
+  -webkit-box-shadow: #303030 2px 2px 10px;
+          box-shadow: #303030 2px 2px 10px;
+  z-index: 1;
+}
+
+#master #section1 button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: #141414;
+  color: aliceblue;
+}
+
+#master #section1 input {
+  border-radius: 15px 0 0 15px;
+  padding: 10px;
+}
+
+#master #section2 {
+  width: 70vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(IMG/maps.gif);
+}
+
+#master #section2 #log {
+  height: 30px;
+  background-color: #d1d1d1;
+  padding: 5px;
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+#master #section2 #bai {
+  height: 30px;
+  background-color: #d1d1d1;
+  padding: 5px;
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+#master #section2 #loc {
+  height: 30px;
+  background-color: #d1d1d1;
+  padding: 5px;
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+#master #section2 #uf {
+  height: 30px;
+  background-color: #d1d1d1;
+  padding: 5px;
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+#master #section2 #cep1 {
+  height: 30px;
+  background-color: #d1d1d1;
+  padding: 5px;
+  border: none;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  #master {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #master input {
+    width: 50vw;
+  }
+  #master #section1 {
+    width: 100%;
+    height: 40vh;
+  }
+  #master #section2 {
+    width: 100%;
+  }
+  #master #section2 #log {
+    width: 70vw;
+  }
+  #master #section2 #bai {
+    width: 70vw;
+  }
+  #master #section2 #loc {
+    width: 70vw;
+  }
+  #master #section2 #uf {
+    width: 70vw;
+  }
+  #master #section2 #cep1 {
+    width: 70vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

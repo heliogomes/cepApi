@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 20px;
+    color: rgb(15, 15, 15);
+}
+
+$backgroundinp:rgb(209, 209, 209);
+
+
+@mixin divform(){
+    height: 30px;
+    background-color: $backgroundinp;
+    padding: 5px;
+    border: none;
+    width: 500px;
+    border-radius: 10px;    
+    margin-top: 0.5rem;
+    margin-bottom: 1rem; 
+    color: black;   
+}
+
+@mixin sectionstyle($width, $dir){
+    width: $width;
+    height: 100vh;
+    display: flex;
+    flex-direction: $dir;
+    justify-content: center;
+    align-items: center;
+}
+
+#master{
+    width: 100%;
+    display: flex; 
+        input{
+            width: 10rem;
+            height: 30px;
+            background-color: $backgroundinp;
+            border: none;  
+            color: black;         
+        }
+        #section1{
+            @include sectionstyle(30vw, row);
+            background-image: linear-gradient(50deg, #4a33a0 0, #2b2586 25%, #00176a 50%, #00084f 75%, #000037 100%);
+            box-shadow: #303030 2px 2px 10px;
+            z-index: 1;
+                button{
+                    width: 30px;
+                    height: 30px;
+                    border: none;
+                    background-color: rgb(20, 20, 20);  
+                    color: aliceblue;                
+                }
+                input{ 
+                    border-radius: 15px 0 0 15px;  
+                    padding: 10px;               
+                }
+        }
+        #section2{
+            @include sectionstyle(70vw, column);
+            background-image: url(IMG/maps.gif);
+                #log{ 
+                   @include divform();                     
+                }
+                #bai{
+                    @include divform(); 
+                }
+                #loc{
+                    @include divform(); 
+                }
+                #uf{
+                    @include divform(); 
+                }
+                #cep1{
+                    @include divform(); 
+                }
+        }
+}
+
+
+@media (max-width: 768px){
+
+@mixin divform(){
+    width: 70vw;
+}   
+    #master{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 50vw;
+        }
+        #section1{
+            width: 100%;
+            height: 40vh;
+        }
+        #section2{
+            width: 100%; 
+            #log{ 
+                @include divform();                     
+             }
+             #bai{
+                 @include divform(); 
+             }
+             #loc{
+                 @include divform(); 
+             }
+             #uf{
+                @include divform(); 
+            }
+             #cep1{
+                 @include divform(); 
+             }
+        }
+    }
+
+}
